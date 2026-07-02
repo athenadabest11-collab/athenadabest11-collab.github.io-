@@ -1,9 +1,9 @@
 name: Deploy Quartz
-
 on:
   push:
     branches:
-      - main  # Make sure this matches your branch name (e.g., 'main' or 'v5')
+      - v5
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
