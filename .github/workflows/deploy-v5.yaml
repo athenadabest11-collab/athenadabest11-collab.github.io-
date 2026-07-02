@@ -14,8 +14,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
-build:
+Jobs:
+ build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
