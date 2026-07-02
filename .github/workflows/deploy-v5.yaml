@@ -28,6 +28,7 @@ jobs:  # <--- THIS WAS MISSING
       - name: Install and Build
         run: |
           npm ci
+          npx quartz build --setup
           npx quartz build
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
